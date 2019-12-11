@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
+body {
+    background-image: url('bakerybackground.jpg');
+    background-size: cover;
+    margin: 0;
+}
+
+#title {
+    text-align: center;
+    font-size: 42px;
+    color: black;
+    font-family: 'Sacramento', cursive;
+    background-color: antiquewhite;
+    margin-top: 0;
+}
+
+.img-grid {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(3, 450px);
+    grid-template-rows: 450px;
+}
