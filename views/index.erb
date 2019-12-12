@@ -7,10 +7,27 @@
 
 <body>
 <h1 id='title'> Baked By Jomir </h1>
-<div class='img-grid'> 
-    <img src="cookies.jpg" width=400px height=400px>
-    <img src="cake.jpg" width=400px height=400px>
-    <img src="muffin.jpg" width=400px height=400px>
+<div class='img-grid'>
+    <div class="container">
+        <img src="cookies.jpg" width=400px height=500px class="image" style="width:100%">
+        <div class="middle">
+            <button class="text" onclick=""> Cookies </button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img src="cake.jpg" width=400px height=500px class="image" style="width:100%">
+        <div class="middle">
+            <button class="text" <%= onclick="./cake" %>%> Cake </button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <img src="muffin.jpg" width=400px height=500px class="image" style="width:100%">
+        <div class="middle">
+            <button class="text" onclick=""> Muffins </button>
+        </div>
+    </div>
 </div>
 </body>
 
