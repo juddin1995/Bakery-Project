@@ -64,3 +64,19 @@ html {
     font-size: 24px;
     padding: 16px 32px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+#grid-bg {
+    background-color: antiquewhite;
+}

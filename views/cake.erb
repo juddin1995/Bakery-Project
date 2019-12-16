@@ -1,10 +1,16 @@
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<div class="grid">
 <% @@cakes.each do |cake| %>
 
+<div id="grid-bg">
 <h1><%= cake.name %></h1>
-<h2> <%= cake.price %> </h2>
+<% cake.price.each do |price| %> 
+<%= price %>
+<% end %>
 
-<%# <h2> <%= cake.price %> </h2> %>
-<%# <h2> <%= cake.price %> </h2> %>
-
+<h2> <%= cake.description %> </h2>
+</div>
 
 <% end %>
+</div>

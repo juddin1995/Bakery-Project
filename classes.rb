@@ -1,28 +1,31 @@
 class Cookie
     attr_accessor :name
-    attr_reader :price
+    attr_reader :price, :description
     def initialize(name, price, description, deluxe = false)
     @name = name
     @price = price
     @deluxe = @deluxe
+    @description = description
     end
 end
 
 class Cake
     attr_accessor :name
-    attr_reader :price
+    attr_reader :price, :description
     def initialize(name, price, description, deluxe = false)
     @name = name
     @price = price
+    @description = description
     end
 end
 
 class Muffin
     attr_accessor :name
-    attr_reader :price
+    attr_reader :price, :description
     def initialize(name, price, description, deluxe = false)
     @name = name
     @price = price
+    @description = description
     end
 end
 
@@ -38,12 +41,12 @@ doubleFudge = Cookie.new("Double Fudge", "$3.00", true )
 @@cookies = [chocoChip, whiteMacadamia, raspberryCheese, smores, chocolatePeanut, doubleFudge]
 
 # Instance Objects for Cake Class
-chocolateCake = Cake.new("Chocolate Cake", "[$4.50 per slice, $22.00 per cake]", "under construction")
-vanillaCake =  Cake.new("Vanilla Cake", "[$4.50 per slice, $22.00 per cake]", "under construction")
-strawberryCake = Cake.new("Strawberry Cake", "[$4.50 per slice, $22.00 per cake]", "under construction")
-doubleChocoChip = Cake.new("Double Chocolate Chip", "[$7.00 per slice, $35.00 per cake]", "under construction", true)
-caramelCake = Cake.new("Caramel Coffee Cake", "[$7.00 per slice, $35.00 per cake]", "under construction", true)
-weddingCake = Cake.new("Wedding Cake", "[$7.00 per slice, $35.00 per cake]", "under construction", true)
+chocolateCake = Cake.new("Chocolate Cake", ["$4.50 per slice", "$22.00 per cake"], "under construction")
+vanillaCake =  Cake.new("Vanilla Cake", ["$4.50 per slice", "$22.00 per cake"], "under construction")
+strawberryCake = Cake.new("Strawberry Cake", ["$4.50 per slice", "$22.00 per cake"], "under construction")
+doubleChocoChip = Cake.new("Double Chocolate Chip", ["$7.00 per slice", "$35.00 per cake"], "under construction", true)
+caramelCake = Cake.new("Caramel Coffee Cake", ["$7.00 per slice", "$35.00 per cake"], "under construction", true)
+weddingCake = Cake.new("Wedding Cake", ["$7.00 per slice", "$35.00 per cake"], "under construction", true)
 
 # Global variable for Cakes
 @@cakes = [chocolateCake, vanillaCake, strawberryCake, doubleChocoChip, caramelCake, weddingCake]
