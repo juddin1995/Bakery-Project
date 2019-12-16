@@ -1,5 +1,6 @@
 require 'sinatra'
 require './classes.rb'
+set :port, 8080
 
 get '/' do
     erb :index
