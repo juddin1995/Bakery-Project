@@ -58,14 +58,14 @@ divorceCake = Cake.new("Divorce Cake Deluxe", ["$7.00 per slice", "$35.00 per ca
 @@cakes = [chocolateCake, vanillaCake, strawberryCake, lavaCake, doubleChocoChip, caramelCake, weddingCake, divorceCake]
 
 # Instance Objects for Muffin Class
-chocolateChip = Muffin.new("Chocolate Chip Muffin", "$3.00", "under construction", "cookies.jpg")
-blueBerry = Muffin.new("Blueberry Muffin", "$3.00", "under construction", "cookies.jpg")
-cornMuffin = Muffin.new("Corn Muffin", "$3.00", "under construction", "cookies.jpg")
-raspBerry = Muffin.new("Raspberry Muffin", "$3.00", "under construction", "cookies.jpg")
-pumpkinMuffin = Muffin.new("Pumpkin Muffin Deluxe", "$5.00", "under construction", "cookies.jpg", true)
-pecanMuffin = Muffin.new("Pecan Muffin Deluxe", "$5.00", "under construction", "./cookies.jpg", true)
-nutellaMuffin = Muffin.new("Nutella Muffin Deluxe", "$5.00", "under construction", "cookies.jpg", true)
-doubleFudge = Muffin.new("Double Fudge Muffin Deluxe", "$5.00", "under construction", "cookies.jpg", true)
+chocolateChip = Muffin.new("Chocolate Chip Muffin", "$3.00", "under construction", "chocmuffin.jpg")
+blueBerry = Muffin.new("Blueberry Muffin", "$3.00", "under construction", "bluemuffin.jpg")
+cornMuffin = Muffin.new("Corn Muffin", "$3.00", "under construction", "corn.jpg")
+raspBerry = Muffin.new("Raspberry Muffin", "$3.00", "under construction", "raspberrymuffin.jpg")
+pumpkinMuffin = Muffin.new("Pumpkin Muffin Deluxe", "$5.00", "under construction", "pumpkinmuffin.jpg", true)
+pecanMuffin = Muffin.new("Pecan Muffin Deluxe", "$5.00", "under construction", "pecan.jpg", true)
+nutellaMuffin = Muffin.new("Nutella Muffin Deluxe", "$5.00", "under construction", "nutella.jpg", true)
+doubleFudge = Muffin.new("Double Fudge Muffin Deluxe", "$5.00", "under construction", "fudgemuffin.jpg", true)
 
 # Global variable for Muffins
 @@muffins = [chocolateChip, blueBerry, cornMuffin, raspBerry, pumpkinMuffin, pecanMuffin, nutellaMuffin, doubleFudge]

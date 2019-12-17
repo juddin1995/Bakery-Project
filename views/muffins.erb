@@ -1,15 +1,17 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 
 <div class="grid">
-    <% @@muffins.each do |muffin| %>
-    <div id="grid-bg">
-        <h2> <%= muffin.name %> </h2>
-        <h3> <%= muffin.price %> </h3>
-        <h3> <%= muffin.description %> </h3>
+    <% @@muffins.each do |m| %>
+        
+        <div id="grid-bg">
+            <div class="products">
+            <h2> <%= m.name %> </h2>
+            <h3> <%= m.price %> </h3>
+            <h3> <%= m.description%> </h3>
+            <img class="product-img" src=<%= m.img %>/>
+
+        </div>
 
     </div>
-        <img src=<%= muffin.img  %>/>
-
-
     <% end %>
 </div>
