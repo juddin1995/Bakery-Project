@@ -31,9 +31,21 @@ get '/contact' do
     erb :contact
 end
 
-@client = Twilio::REST::Client.new(ENV["AccID"], ENV["AuthToken"]
-)
-message = @client.messages.create(
-    body: "Thank you",   
-    from: '+12054097915', # Your Twilio number
-    to: ENV["number"]) # Your mobile phone number
+post '/send_text' do
+    phone_number = params[:number]
+    # ENV = Machine's environment variable dictionary
+    # 1. source .bash_profile to set variables
+    # 2. reference variables through ENV e.g. ENV["MY_VAR"]
+    account_sid = ENV["AccID"] # Your Test Account SID from www.twilio.com/console/settings
+    auth_token = ENV["AuthToken"] # Your Test Auth Token from www.twilio.com/console/settings
+    @client = Twilio::REST::Client.new(account_sid, auth_token)
+    message = @client.messages.create(
+        body:  "Thank you for visiting Baked By Jomir, a product catalog will be sent to you shortly.",
+        # Replace with your phone number
+        to: "+1#{phone_number}", 
+        # Use this Magic Number for creating SMS
+        from: ENV["number"] ) 
+    puts message.sid
+    redirect '/home'
+end
+

@@ -3,10 +3,12 @@
 <div class="grid">
     <% @@muffins.each do |muffin| %>
     <div id="grid-bg">
-        <h1><%= muffin.name %></h1>
-        <h2> <%= muffin.price %> </h2>
-        <h2> <%= muffin.description %> </h2>
+        <h2> <%= muffin.name %> </h2>
+        <h3> <%= muffin.price %> </h3>
+        <h3> <%= muffin.description %> </h3>
+
     </div>
+        <img src=<%= muffin.img  %>/>
 
 
     <% end %>

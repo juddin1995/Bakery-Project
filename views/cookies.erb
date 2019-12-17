@@ -2,10 +2,16 @@
 
 <div class="grid">
     <% @@cookies.each do |cookie| %>
-    <div id="grid-bg">
-        <h1> <%= cookie.name %> </h1>
-        <h2> <%= cookie.price %></h2>
-        <h2> <%= cookie.description%></h2>
+        
+        <div id="grid-bg">
+            <div class="products">
+            <h2> <%= cookie.name %> </h2>
+            <h3> <%= cookie.price %> </h3>
+            <h3> <%= cookie.description%> </h3>
+            <img class="product-img" src=<%= cookie.img %>/>
+
+        </div>
+
     </div>
     <% end %>
 </div>
