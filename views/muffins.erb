@@ -1,8 +1,13 @@
-<% @@muffins.each do |muffin| %>
+<link rel="stylesheet" type="text/css" href="main.css">
 
-<h1><%= muffin.name %></h1>
-<h2> <%= muffin.price %> </h2>
-<h2></h2>
-<h2></h2>
+<div class="grid">
+    <% @@muffins.each do |muffin| %>
+    <div id="grid-bg">
+        <h1><%= muffin.name %></h1>
+        <h2> <%= muffin.price %> </h2>
+        <h2> <%= muffin.description %> </h2>
+    </div>
 
-<% end %>
+
+    <% end %>
+</div>

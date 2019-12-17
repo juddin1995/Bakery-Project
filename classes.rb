@@ -6,6 +6,7 @@ class Cookie
     @price = price
     @deluxe = @deluxe
     @description = description
+
     end
 end
 

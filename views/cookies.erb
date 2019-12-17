@@ -1,14 +1,11 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 
-<div class="grid"> 
-<% @@cookies.each do |cookie| %>
-<div id="grid-bg">
-<h1> <%= cookie.name %> </h1>
-<h2> <%= cookie.price %></h2>
-<h2> <%= cookie.description%>
-</div>
-
-
-
-<% end %>
+<div class="grid">
+    <% @@cookies.each do |cookie| %>
+    <div id="grid-bg">
+        <h1> <%= cookie.name %> </h1>
+        <h2> <%= cookie.price %></h2>
+        <h2> <%= cookie.description%></h2>
+    </div>
+    <% end %>
 </div>
