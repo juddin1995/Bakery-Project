@@ -40,7 +40,7 @@ post '/send_text' do
     auth_token = ENV["AuthToken"] # Your Test Auth Token from www.twilio.com/console/settings
     @client = Twilio::REST::Client.new(account_sid, auth_token)
     message = @client.messages.create(
-        body:  "Thank you for visiting Baked By Jomir, a product catalog will be sent to you shortly.",
+        body:  "Thank you for visiting Baked By Jomir. a product catalog will be sent to you shortly.",
         # Replace with your phone number
         to: "+1#{phone_number}", 
         # Use this Magic Number for creating SMS

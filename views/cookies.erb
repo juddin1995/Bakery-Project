@@ -2,15 +2,24 @@
 
 <div class="grid">
     <% @@cookies.each do |cookie| %>
-        
-        <div id="grid-bg">
-            <div class="products">
+
+    <div id="grid-bg">
+        <div class="products">
             <h2> <%= cookie.name %> </h2>
+            <h3> <%= cookie.description %> </h3>
             <h3> <%= cookie.price %> </h3>
-            <h3> <%= cookie.description%> </h3>
-            <img class="product-img" src=<%= cookie.img %>/>
+            <img class="product-img" src=<%= cookie.img %> />
 
         </div>
+
+        <footer>
+            <div class="navbar" id="myNavbar">
+                <a href="/cookies">Cookies</a>
+                <a href="/cake">Cake</a>
+                <a href="/muffins">Muffins</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction2()"></a>
+            </div>
+        </footer>
 
     </div>
     <% end %>

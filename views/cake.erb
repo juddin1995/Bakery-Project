@@ -4,14 +4,25 @@
     <% @@cakes.each do |cake| %>
 
     <div id="grid-bg">
-        <h2> <%= cake.name %> </h2>
-        <% cake.price.each do |price| %>
-        <%= price %>
-        <% end %>
+        <div class="products">
+            <h2> <%= cake.name %> </h2>
+            <h3> <%= cake.description %> </h3>
+            <% cake.price.each do |price| %>
+            <%= price %>
+            <% end %>
+            <img class="product-img" src=<%= cake.img %> />
 
-        <h3> <%= cake.description %> </h3>
-        <img class="product-img" src=<%= cake.img %>> 
+        </div>
+
+        <footer>
+            <div class="navbar" id="myNavbar">
+                <a href="/cookies">Cookies</a>
+                <a href="/cake">Cake</a>
+                <a href="/muffins">Muffins</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction2()"></a>
+            </div>
+        </footer>
+
     </div>
-
     <% end %>
 </div>
