@@ -16,7 +16,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 html {
-    background: url('bakerybackground.jpg') no-repeat center center fixed;
+    background: url('./Images/bakerybackground.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -93,8 +93,8 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(2, 350px);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: repeat(2, 340px);
     grid-gap: 10px;
     text-align: center;
     margin-left: auto;
@@ -141,7 +141,7 @@ body {
 }
 
 .topnav a.active {
-    background-color: darkslategrey;
+    /* background-color: darkslategrey; */
     color: white;
 }
 
@@ -270,5 +270,7 @@ img.product-img {
 
 .products h3 {
     font-family: sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
