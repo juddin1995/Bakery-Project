@@ -4,11 +4,15 @@ GEM
     faraday (0.17.1)
       multipart-post (>= 1.2, < 3)
     jwt (2.2.1)
-    mini_portile2 (2.4.0)
+    mini_portile2 (2.8.0)
     multipart-post (2.1.1)
     mustermann (1.0.3)
-    nokogiri (1.10.7-x64-mingw32)
-      mini_portile2 (~> 2.4.0)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.3-x64-mingw32)
+      racc (~> 1.4)
+    racc (1.6.0)
     rack (2.0.7)
     rack-protection (2.0.7)
       rack
@@ -24,6 +28,7 @@ GEM
       nokogiri (>= 1.6, < 2.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
